@@ -1,7 +1,7 @@
 {
   "id": "ernestdefoe-recruiting",
   "name": "Recruiting",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "College-football recruiting tracker for Convoro. Pulls live FBS recruiting rankings from collegefootballdata.com and renders them on a themed page at /recruiting — searchable, filterable by position and commitment status, with star ratings, hometowns, committed schools and (optionally) player headshots. Cache-backed with stale-while-revalidate, so the page stays fast and survives CFBD outages.",
   "author": "Ernest Defoe",
   "convoro": ">=1.39.6",

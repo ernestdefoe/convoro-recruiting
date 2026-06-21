@@ -80,6 +80,12 @@ class Extension extends ServiceProvider
             return self::recruitingPage($data->get());
         });
 
+        // JSON feed of the cached recruits ({data, year, error}). Consumed by
+        // add-ons (e.g. the GridIron Nation "Top Recruits" sidebar widget).
+        Route::middleware(['web', 'auth'])->get('/api/ext/recruiting/recruits', function (RecruitData $data) {
+            return response()->json($data->get());
+        });
+
         // Admin: settings form + save + "Refresh now". Admin-area only.
         Route::middleware(['web', 'auth', 'admin'])->prefix('admin/ext/recruiting')->group(function () {
             Route::get('/', fn () => self::adminPage());
