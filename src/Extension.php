@@ -540,8 +540,8 @@ class Extension extends ServiceProvider
         .rc-card-form input:focus{outline:none;border-color:rgb(var(--c-primary))}
         .rc-hint{font-size:12px;color:rgb(var(--c-muted));margin:5px 0 0}
         .rc-hint a{color:rgb(var(--c-primary));text-decoration:none}
-        .rc-check{display:flex;align-items:center;gap:8px;font-size:14px;color:rgb(var(--c-text));margin:18px 0 4px;cursor:pointer}
-        .rc-check input{width:auto}
+        .rc-check{display:flex;align-items:center;gap:9px;font-size:14px;color:rgb(var(--c-text));margin:18px 0 4px;cursor:pointer}
+        .rc-check input[type=checkbox]{width:18px;height:18px;flex-shrink:0;margin:0;padding:0;accent-color:rgb(var(--c-primary));cursor:pointer}
         .rc-actions{display:flex;align-items:center;gap:12px;margin-top:20px}
         .rc-btn{font:inherit;font-size:13.5px;font-weight:700;padding:9px 15px;border-radius:10px;border:1px solid rgb(var(--c-border));
           background:rgb(var(--c-surface));color:rgb(var(--c-text));cursor:pointer}
