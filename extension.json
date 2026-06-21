@@ -1,0 +1,25 @@
+{
+  "id": "ernestdefoe-recruiting",
+  "name": "Recruiting",
+  "version": "1.0.0",
+  "description": "College-football recruiting tracker for Convoro. Pulls live FBS recruiting rankings from collegefootballdata.com and renders them on a themed page at /recruiting — searchable, filterable by position and commitment status, with star ratings, hometowns, committed schools and (optionally) player headshots. Cache-backed with stale-while-revalidate, so the page stays fast and survives CFBD outages.",
+  "author": "Ernest Defoe",
+  "convoro": ">=1.39.6",
+  "type": "extension",
+  "namespace": "Ernestdefoe\\Recruiting\\",
+  "provider": "Ernestdefoe\\Recruiting\\Extension",
+  "settings": [
+    { "key": "api_key", "type": "text", "default": "" },
+    { "key": "year", "type": "text", "default": "" },
+    { "key": "team", "type": "text", "default": "" },
+    { "key": "max_recruits", "type": "number", "default": 25 },
+    { "key": "cache_minutes", "type": "number", "default": 360 },
+    { "key": "photos_enabled", "type": "boolean", "default": true },
+    { "key": "widget_title", "type": "text", "default": "" }
+  ],
+  "nav": { "label": "Recruiting", "href": "/recruiting", "auth": true },
+  "admin_url": "/admin/ext/recruiting",
+  "icon": "icon.svg",
+  "premium": false,
+  "price": 0
+}
